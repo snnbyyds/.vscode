@@ -3,7 +3,7 @@
     "terminal.integrated.gpuAcceleration": "on",
     // [[C++]]
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "xaver.clang-format",
+    // "editor.defaultFormatter": "xaver.clang-format",
     // "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, TabWidth: 4 }",
     "clangd.arguments": [
         // "--all-scopes-completion",
@@ -49,7 +49,7 @@
     "clangd.onConfigChanged": "restart",
     "clangd.serverCompletionRanking": true,
     "clangd.detectExtensionConflicts": true,
-    "clangd.path": "/usr/bin/clangd",
+    "clangd.path": "/usr/bin/clangd-19",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     // "editor.formatOnSave": true,
     // [[LLDB]]
@@ -62,4 +62,7 @@
     "python.analysis.typeCheckingMode": "basic",
     // "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, TabWidth: 4 }",
     "clang-format.fallbackStyle": "Google",
+    "cph.language.cpp.Command": "clang++",
+    "cph.language.cpp.Args": "-flto -O3",
+    "cph.general.saveLocation": "/home/sn/.vscode/cph",
 }
