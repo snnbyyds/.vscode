@@ -3,7 +3,6 @@
     "terminal.integrated.gpuAcceleration": "on",
     // [[C++]]
     "editor.formatOnSave": false,
-    // "editor.defaultFormatter": "xaver.clang-format",
     // "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, TabWidth: 4 }",
     "clangd.arguments": [
         // "--all-scopes-completion",
@@ -26,6 +25,7 @@
         "-j=6",
     ],
     "clangd.fallbackFlags": [
+        "-std=c++17",
         "-Wunused-variable",
         "-Wno-shadow",
         "-Wshadow-field-in-constructor-modified",
@@ -49,7 +49,7 @@
     "clangd.onConfigChanged": "restart",
     "clangd.serverCompletionRanking": true,
     "clangd.detectExtensionConflicts": true,
-    "clangd.path": "/usr/bin/clangd-19",
+    "clangd.path": "/usr/bin/clangd",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     // "editor.formatOnSave": true,
     // [[LLDB]]
@@ -62,7 +62,66 @@
     "python.analysis.typeCheckingMode": "basic",
     // "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, TabWidth: 4 }",
     "clang-format.fallbackStyle": "Google",
-    "cph.language.cpp.Command": "clang++",
-    "cph.language.cpp.Args": "-flto -O3",
     "cph.general.saveLocation": "/home/sn/.vscode/cph",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xelatex->bibtex->xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex->bibtex->pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "/usr/bin/xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "%DOC%.tex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "/usr/bin/pdflatex",
+            "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "/usr/bin/bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
 }
