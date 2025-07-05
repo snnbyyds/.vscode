@@ -4,6 +4,9 @@
     // [[C++]]
     "editor.formatOnSave": false,
     // "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, TabWidth: 4 }",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "clangd.arguments": [
         // "--all-scopes-completion",
         "--background-index",
