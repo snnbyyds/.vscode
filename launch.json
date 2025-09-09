@@ -26,5 +26,14 @@
             ],
             "preLaunchTask": "C/C++: g++ build active file"
         },
+        {
+        "type": "lldb",
+        "request": "launch",
+        "name": "Debug Rust Program",
+        "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "preLaunchTask": "cargo build"
+        }
     ]
 }
