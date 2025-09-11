@@ -69,6 +69,9 @@
     // "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, TabWidth: 4 }",
     "clang-format.fallbackStyle": "Google",
     "cph.general.saveLocation": "/home/sn/.vscode/cph",
+    "ispc.compilerPath": "/usr/bin/ispc",
+    "ispc.compilerTargetOS": "linux",
+    "ispc.compilerTarget": "avx2-i32x8",
     "latex-workshop.latex.recipes": [
         {
             "name": "xelatex",
