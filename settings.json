@@ -28,7 +28,6 @@
         "-j=6",
     ],
     "clangd.fallbackFlags": [
-        "-std=c++17",
         "-Wunused-variable",
         "-Wno-shadow",
         "-Wshadow-field-in-constructor-modified",
@@ -133,6 +132,7 @@
             ]
         }
     ],
+    "cph.language.c.Args": "-O2 -Wall -lm",
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],
 }
